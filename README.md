@@ -1,5 +1,5 @@
 ## Microverse Capstone Project One 
-This project will test HTML, CSS and JS skills.
+This project will test my HTML, CSS and JS skills.
 Its also going to test my knowledge on the Gitflow and other technologies and skills used throughout module one, like Github and Reasearch.
 It is a sum total of all all Microverse module one activities and is based on a real world problem.
 
@@ -24,17 +24,17 @@ Charles Gobina :student:
 ## Contributing :handshake:
 Contributions, issues, and feature requests are welcome!
 ### Fork this repo using the command below
-* `gh repo fork git@github.com:charlesgobina/microverse-capstone-project-one.git`
+```gh repo fork git@github.com:charlesgobina/microverse-capstone-project-one.git```
 ### Clone the forked repo using the command below
-* `git clone git@github.com:charlesgobina/microverse-capstone-project-one.git`
+```git clone git@github.com:charlesgobina/microverse-capstone-project-one.git```
 ### Navigate to the directory in which you cloned the project and use the command below
-* `cd microverse-capstone-project-one`
+```cd microverse-capstone-project-one```
 ### Create a new feature branch using the command below
-* `git checkout -b [name_of_feature_branch]`
+```git checkout -b [name_of_feature_branch]```
 ### Commit your changes using git commit as shown below
-* `git commit -m ["entere a commit message"]`
+```git commit -m ["entere a commit message"]```
 ### Push your changes using
-* `git push -u origin [name_of_feature_branch]`
+```git push -u origin [name_of_feature_branch]```
 ### Open pull request.
 
 
