@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.show-case {
+  position: relative;
+  top: 0;
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  height: 100vh;
+  background: url('/assets/images/header.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  position: relative;
+  z-index: 1000;
+  height: 100vh;
+}
+
+header nav {
+  flex-direction: row;
+  margin: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  color: #ec5242;
+}
+
+header .text {
+  color: #ec5242;
+  margin: 30% 20px 0 20px;
+  max-width: 100%;
+  font-size: 1.2rem;
+  line-height: 35px;
+  font-weight: 700;
+}
+
+header .text h2 {
+  font-weight: 700;
+}
+
+header .sub-text {
+  color: #272a31;
+  margin: 0 20px 0 20px;
+  max-width: 100%;
+  font-size: 1rem;
+}
+
+header .sub-text .hero-text {
+  font-family: inherit;
+  font-style: normal;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+header .sub-text .hero-time {
+  font-family: inherit;
+  font-style: normal;
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+header .sub-text .hero-place {
+  font-family: inherit;
+  font-style: normal;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(245, 241, 241, 0.8);
+}
+
+header nav a h1 {
+  font-family: inherit;
+}
