@@ -439,14 +439,17 @@ header nav a h1 {
   flex-wrap: wrap;
 }
 
-.copy-right {
-  margin: 10px 20px;
-  position: relative;
+.copy-rights {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  margin: 0 20px;
 }
 
-.copy-right img {
-  width: 100%;
-  border: 1px solid #d5d8dd;
+.image-home-dimension {
+  width: 150px;
+  height: auto;
 }
 
 .closing-text {
