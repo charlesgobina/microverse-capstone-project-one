@@ -323,11 +323,10 @@ header nav a h1 {
 
 .main-program {
   font-family: 'Lato', sans-serif;
-  background: url('assets/images/rectback.png');
+  background: url('assets/images/layer4.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
+  background-size: 100vw 100%;
 }
 
 .program-text {
@@ -352,23 +351,30 @@ header nav a h1 {
   .main-program .program-details {
     flex-direction: column;
     align-items: center;
-    padding: 20px 0 100px 0;
+    padding: 50px 0;
   }
 
   main .main-program .program-details .events {
     display: grid;
-    grid-template-columns: repeat(3, 33.33%);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
     grid-auto-flow: column;
     justify-content: center;
     align-items: center;
+    padding: 20px 40px 10px 40px;
   }
 
   .main-program .program-details .events ul {
     flex-direction: column;
     border: 1px solid #272a31;
-    background-color: #e8ebf00c;
+    background-color: #4a4e5736;
     height: 100%;
-    padding: 50px 0;
+    padding: 20px 0;
+    scale: 0;
+  }
+
+  .main-program .program-details .events ul:hover {
+    border: 1px solid #f0f0f0;
   }
 
   .u-btn {
@@ -394,6 +400,12 @@ header nav a h1 {
   }
 }
 
+@media screen and (min-width: 1350px) {
+  main .main-program .program-details .events {
+    padding: 20px 130px;
+  }
+}
+
 .program-details {
   flex-direction: column;
 }
@@ -401,11 +413,12 @@ header nav a h1 {
 .main-program .program-details .events {
   display: flex;
   flex-direction: column;
+  margin: 0 20px;
 }
 
 .program-details ul {
   list-style-type: none;
-  margin: 10px 20px;
+  margin: 10px 0;
   flex-direction: column;
   text-align: center;
 }
@@ -464,6 +477,11 @@ header nav a h1 {
   background-color: #e8ebf00c;
 }
 
+.main-icon {
+  width: 40px;
+  height: 40px;
+}
+
 .feature-artists .artists .u-listi {
   display: flex;
   flex-direction: row;
@@ -473,10 +491,11 @@ header nav a h1 {
 
 .program-details .exp {
   flex: 2;
+  display: inline;
   font-family: inherit;
   font-style: normal;
   font-size: small;
-  text-align: center;
+  text-align: left;
   color: #fff;
 }
 
@@ -498,7 +517,16 @@ header nav a h1 {
   text-align: right;
   font-family: inherit;
   font-style: normal;
-  font-size: 18px;
+  font-size: small;
+}
+
+.program-details .criterion {
+  flex: 1;
+  align-self: center;
+  text-align: left;
+  font-family: inherit;
+  font-style: normal;
+  font-size: small;
 }
 
 .program-details .btn {
@@ -579,16 +607,6 @@ header nav a h1 {
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
-}
-
-.copy-right {
-  margin: 10px 20px;
-  position: relative;
-}
-
-.copy-right img {
-  width: 100%;
-  border: 1px solid #d5d8dd;
 }
 
 .closing-text {
