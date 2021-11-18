@@ -48,7 +48,7 @@ a {
   }
 
   body .show-case {
-    background: url('/assets/images/tokyo.jpg');
+    background: url('assets/images/tokyo.jpg');
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -67,7 +67,7 @@ a {
   font-family: 'Lato', sans-serif;
   width: 100%;
   min-height: 100vh;
-  background: url('/assets/images/header.jpg');
+  background: url('assets/images/header.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -323,7 +323,7 @@ header nav a h1 {
 
 .main-program {
   font-family: 'Lato', sans-serif;
-  background: url('/assets/images/rectback.png');
+  background: url('assets/images/rectback.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
