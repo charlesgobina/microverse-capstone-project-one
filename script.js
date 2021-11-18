@@ -1,8 +1,5 @@
-const artistContainer = document.querySelector('.artists')
-const featureArtist = document.querySelector('.feature-artists');
-let spany = document.createElement('span');
-spany = ``;
-let content = ``;
+const artistContainer = document.querySelector('.artists');
+let content = '';
 
 const menuIcon = document.querySelector('.burger');
 const menuContainer = document.querySelector('.menu-container');
@@ -66,7 +63,7 @@ const bandMenbers = [
 ];
 
 const createContent = () => {
-  for (let i = 0; i < bandMenbers.length; i++) {
+  for (let i = 0; i < bandMenbers.length; i += 1) {
     content += `
       <ul class="u-listi">
         <li class="criteria primary-color"><img class="member-face image-dimension" src=${bandMenbers[i].image} alt=""></li>
