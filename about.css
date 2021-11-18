@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/cocogoose');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.primary-color {
+  color: #ec5242;
+}
+
+.secondary-color {
+  color: #272a31;
+}
+
+a {
+  text-decoration: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.show-case {
+  position: relative;
+  top: 0;
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  background: url('/assets/images/header.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  position: relative;
+  z-index: 1000;
+}
+
+header nav {
+  flex-direction: row;
+  padding: 10px 20px 10px 20px;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.795);
+}
+
+header .text {
+  text-align: center;
+  margin: 30% 20px 0 20px;
+  max-width: 100%;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.frank-logo,
+.desktop-links {
+  display: none;
+}
+
+.burger {
+  align-self: flex-start;
+}
+
+@media screen and (min-width: 768px) {
+  .frank-logo,
+  .desktop-links {
+    display: block;
+  }
+
+  .frank-logo {
+    color: #275f63;
+    letter-spacing: 10px;
+  }
+
+  .desktop-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  body .show-case {
+    background: url('/assets/images/tokyo.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+  .show-case header nav {
+    align-items: center;
+    padding: 20px 10%;
+  }
+}
+
+.social {
+  display: none;
+}
+
+header nav a {
+  color: #ec5242;
+}
+
+.spec {
+  border: 5px solid #ec5242;
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #ec5242;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    transition: 0.6s;
+    z-index: 5;
+    display: block;
+  }
+
+  .menu-container.isActive {
+    left: 0;
+  }
+
+  .menu-container .close-btn {
+    position: absolute;
+    width: 100%;
+  }
+
+  .menu-container i {
+    position: relative;
+    margin-left: 282px;
+    margin-top: 62px;
+    color: #fff;
+  }
+
+  .menu-container li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    z-index: 1000;
+  }
+
+  .menu-container ul {
+    list-style: none;
+    position: relative;
+    top: 106px;
+    left: 28px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .show-case header .social .social-links {
+    list-style: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    background-color: #272a31;
+    height: 50px;
+  }
+
+  .show-case header .social .social-links li {
+    margin-right: 20px;
+    color: #fff;
+  }
+
+  .show-case header .social {
+    display: block;
+  }
+
+  .show-case header .text {
+    margin: 25% 10% 0 10%;
+  }
+
+  .show-case header .text h2 {
+    font-size: 3.5rem;
+    line-height: 70px;
+  }
+
+  .show-case header .text h3 {
+    font-size: 3.5rem;
+    line-height: 70px;
+  }
+
+  .show-case header .sub-text {
+    margin: 2% 10% 0 10%;
+  }
+
+  .show-case header .sub-text .hero-text {
+    font-size: 1.4rem;
+    padding-right: 20%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .show-case header .text {
+    margin: 15% 10% 0 10%;
+  }
+
+  .show-case header .text h2 {
+    font-size: 4rem;
+    margin: 20px 0 10px 0;
+    line-height: 70px;
+  }
+
+  .show-case header .text h3 {
+    font-size: 4rem;
+    line-height: 70px;
+  }
+
+  .show-case header .sub-text {
+    margin: 2% 10% 0 10%;
+  }
+
+  .show-case header .sub-text .hero-text {
+    font-size: 1.4rem;
+    padding-right: 20%;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .show-case header .text {
+    margin: 10% 10% 0 10%;
+  }
+
+  .show-case header .text h2 {
+    font-size: 4rem;
+    margin: 20px 0 10px 0;
+    line-height: 70px;
+  }
+
+  .show-case header .text h3 {
+    font-size: 4rem;
+    line-height: 70px;
+  }
+
+  .show-case header .sub-text {
+    margin: 2% 25% 0 25%;
+  }
+
+  .show-case header .sub-text .hero-text {
+    font-size: 1.4rem;
+    padding-right: 20%;
+  }
+}
+
+header .text h2,
+h3 {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-weight: 700;
+}
+
+header .text h2 span {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-weight: 700;
+}
+
+header .text .greeting-text {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-weight: 400;
+}
+
+header .sub-text {
+  margin: 40px 20px 40px 20px;
+  max-width: 100%;
+  font-size: 1rem;
+  border: 1px solid #d5d8dd;
+  padding: 30px;
+  background-color: #d3d3d3;
+  line-height: 30px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .about .contact-text {
+    margin: 0 25%;
+  }
+
+  .about .concert-logo {
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+.contact-text {
+  margin: 10px 20px 10px 20px;
+  font-size: 1rem;
+  line-height: 30px;
+  text-align: center;
+  padding: 10px;
+}
+
+.contact-email {
+  font-weight: 700;
+  margin: 10px 20px 20px 20px;
+  font-size: 1rem;
+  line-height: 20px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+header .sub-text .hero-text {
+  text-align: center;
+  font-family: inherit;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(245, 241, 241, 0.8);
+}
+
+header nav a h1 {
+  font-family: inherit;
+}
+
+.program-text {
+  font-family: inherit;
+  font-style: normal;
+  font-size: 28px;
+  padding-top: 20px;
+  text-align: center;
+  color: #ec5242;
+}
+
+.line {
+  background-color: #ec5242;
+  color: #ec5242;
+  width: 50px;
+  height: 1px;
+  border: none;
+  margin: 5px auto 15px auto;
+}
+
+.concert-logo {
+  margin: 10px 20px;
+  position: relative;
+}
+
+.concert-logo img {
+  width: 100%;
+  border: 1px solid #d5d8dd;
+}
+
+.concert-overlay {
+  position: absolute;
+  overflow-y: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 98%;
+  background: rgba(236, 82, 66, 0.9);
+  mix-blend-mode: multiply;
+  z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .previous-concerts .past-events {
+    flex-direction: row;
+  }
+
+  .previous-concerts .past-events .concert-overlay {
+    width: 75%;
+    margin-left: 10%;
+  }
+
+  .previous-concerts .past-events .concert-logo img {
+    width: 75%;
+    margin-left: 10%;
+  }
+}
+
+.past-events {
+  flex-direction: column;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  z-index: 2;
+}
+
+.overlay-title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.overlay-desc {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer footer .partner-area {
+  background: #272a31;
+  padding: 20px;
+}
+
+.image-dimension {
+  width: 150px;
+  height: auto;
+}
+
+.partners {
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.copy-right {
+  margin: 10px 20px;
+  position: relative;
+}
+
+.copy-right img {
+  width: 100%;
+  border: 1px solid #d5d8dd;
+}
+
+.closing-text {
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+}
