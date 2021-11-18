@@ -57,7 +57,7 @@ const bandMenbers = [
     decription: `Jefferey is a sound engineer at EA. He joined the Band 5 years ago and is responsible for mixing sounds and other playback stuff. he is 
     very talented`,
     instrument: 'Mixer',
-  }, 
+  },
 ];
 const createContent = () => {
   for (let i = 0; i < bandMenbers.length; i += 1) {
@@ -88,7 +88,7 @@ const createContent = () => {
   </div>
   `;
   artistContainer.innerHTML = content;
-}
+};
 window.onload = () => {
   createContent();
-};  
+};
