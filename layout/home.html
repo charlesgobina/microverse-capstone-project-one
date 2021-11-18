@@ -12,23 +12,53 @@
   <div class="show-case">
     <div class="overlay"></div>
     <header>
+      <div class="social">
+        <ul class="social-links d-flex">
+          <a href="#"><li><i class='bx bxl-facebook-circle bx-sm' ></i></li></a>
+          <a href="#"><li><i class='bx bxl-twitter bx-sm' ></i></li></a>
+          <a href="#"><li>English</li></a>
+          <a href="#"><li>My Page</li></a>
+          <a href="#"><li>Logout</li></a>
+        </ul>
+      </div>
       <nav class="d-flex">
-        <a href="#">
-          <h1>Musica</h1>
-        </a>
-        <a href="#">
+        <a class="burger" href="#">
           <i class='bx bx-menu bx-md'></i>
         </a>
+        <a href="/layout/home.html">
+          <h1 class="frank-logo" >Musica</h1>
+        </a>
+        <ul class="desktop-links">
+          <a class="primary-color" href="/layout/about.html"><li>About</li></a>
+          <a class="secondary-color" aria-disabled="true" href="#"><li>Program</li></a>
+          <a class="secondary-color" href="#"><li>Join</li></a>
+          <a class="secondary-color" href="#"><li>Sponsor</li></a>
+          <a class="secondary-color" href="#"><li>News</li></a>
+          <a class="primary-color spec" href="#"><li>Campaign</li></a>
+        </ul>
       </nav>
+      <div class="menu-container">
+        <div class="close-btn">
+          <i class="bx bx-x bx-lg closeIcon"></i>
+        </div>
+        <ul>
+          <li><a class="side-link" href="/layout/about.html">About</a></li>
+          <li><a class="side-link" href="#aboutme">Program</a></li>
+          <li><a class="side-link" href="#contact">Join</a></li>
+          <li><a class="side-link" href="#contact">Sponsor</a></li>
+          <li><a class="side-link" href="#contact">Campaign</a></li>
+        </ul>
+      </div>
       <div class="text">
-        <h2>Microverse <br /><span>Musical Team</span></h2>
-        <h3>Gobal Concert 2022</h3>
+        <p class="greeting-text primary-color">"Hi Music Enthusiats"</p>
+        <h2>Franky<span> Global</span></h2>
+        <h3>Musical Concert <small>2022</small></h3>
       </div>
       <div class="sub-text">
         <p class="hero-text">
-          A joufyl celebration believing in the value of opennes and
+          A joyfyl celebration believing in the value of opennes and
           sharing, creating a positive change with people from over 
-          80 countries is taking place in October, in Korea.
+          80 countries is taking place in October, in Australia.
         </p>
         <p class="hero-time">
           2015.10.15(THU) ~ 16(FRI)
@@ -37,15 +67,77 @@
           @ Upper House Sydney Australia
         </p>
       </div>
-      
     </header>
   </div>
-    
-    
-    
-    <main>
-      <p>Just some random text</p>
-    </main>
-  
+  <main>
+    <section class="main-program">
+      <h4 class="program-text">Main Program</h4>
+      <hr id="line">
+      <div class="program-details d-flex">
+        <div class="events">
+          <ul class="d-flex u-list">
+            <i class='bx bxs-microphone bx-sm primary-color'></i>
+            <li class="criteria primary-color">Interview</li>
+            <li class="exp">
+              Get to interview you favorite band members. 
+              Ask your hear burning questions.Get autographs to showoff with friends
+            </li>
+          </ul>
+          <ul class="d-flex u-list">
+            <i class='bx bxs-chalkboard bx-sm primary-color'></i>
+            <li class="criteria primary-color">Workshop</li>
+            <li class="exp">
+              Ever dreamt of breaking into the music industry, 
+              well this is your chance to take part in this amazing Workshop
+              held by professionals in the field
+            </li>
+          </ul>
+          <ul class="d-flex u-list">
+            <i class='bx bxs-music bx-sm primary-color'></i>
+            <li class="criteria primary-color">Rock Session</li>
+            <li class="exp">Get to see your favorite band members 
+              perform on stage, and so much more.
+            </li>
+          </ul>
+          <div class="d-flex u-btn">
+            <button class="exp-btn program-btn">Join</button>
+          </div>
+        </div>
+        <div class="more">
+          <a href="#" class="see-more tertiary-color">SEE THE WHOLE PROGRAM</a>
+          <hr class="line primary-color">
+        </div>
+      </div>
+      
+    </section>
+    <section class="feature-artists">
+      <h4 class="program-text secondary-color">Team Members</h4>
+      <hr id="line" class="primary-color">
+      <div class="program-details artists">
+        
+      </div>
+    </section>
+    <section class="footer">
+      <footer>
+        <div class="partner-area">
+          <h4 class="program-text">Partners</h4>
+          <hr id="line" class="primary-color">
+          <div class="partners d-flex">
+            <img class="image-home-dimension" src="/assets/images/microsoft-logo-png-2398.png" alt="Microsoft">
+            <img class="image-home-dimension" src="/assets/images/airbnb.png" alt="Airbnb">
+            <img class="image-home-dimension" src="/assets/images/plus.png" alt="Disney">
+            <img class="image-home-dimension" src="/assets/images/google-logo-9834.png" alt="Google">
+          </div>
+        </div>
+        <div class="copy-rights">
+          <p class="closing-text">2022 Franky Global Concert <br /> Some rights reserved</p>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+
+
+  <script src="/JS/script.js"></script>
 </body>
 </html>
