@@ -52,7 +52,7 @@ a {
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .show-case header nav {
@@ -66,6 +66,7 @@ a {
   top: 0;
   font-family: 'Lato', sans-serif;
   width: 100%;
+  min-height: 100vh;
   background: url('/assets/images/header.jpg');
   background-position: center;
   background-size: cover;
@@ -75,6 +76,7 @@ a {
 header {
   position: relative;
   z-index: 10;
+  min-height: 100vh;
 }
 
 .social {
@@ -226,7 +228,7 @@ header nav a {
 
   .menu-container i {
     position: relative;
-    margin-left: 282px;
+    left: 85%;
     margin-top: 62px;
     color: #fff;
   }
