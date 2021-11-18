@@ -109,7 +109,7 @@ header nav a {
     height: 50px;
   }
 
-  .show-case header .social .social-links li {
+  .show-case header .social .social-links li a {
     margin-right: 20px;
     color: #fff;
   }

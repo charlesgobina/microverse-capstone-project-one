@@ -4,7 +4,6 @@ let content = '';
 const menuIcon = document.querySelector('.burger');
 const menuContainer = document.querySelector('.menu-container');
 const closeButton = document.querySelector('.closeIcon');
-const navs = document.querySelectorAll('.menu-container .side-link');
 
 menuIcon.addEventListener('click', () => {
   menuContainer.classList.toggle('isActive');
@@ -58,10 +57,8 @@ const bandMenbers = [
     decription: `Jefferey is a sound engineer at EA. He joined the Band 5 years ago and is responsible for mixing sounds and other playback stuff. he is 
     very talented`,
     instrument: 'Mixer',
-  },
-  
+  }, 
 ];
-
 const createContent = () => {
   for (let i = 0; i < bandMenbers.length; i += 1) {
     content += `
@@ -85,7 +82,6 @@ const createContent = () => {
       </ul>
     `;
   }
-
   content += `
   <div class="d-flex a-btn">
     <button type="button" id="theBtn" class="exp-btn program-btn">See more</button>
@@ -93,5 +89,6 @@ const createContent = () => {
   `;
   artistContainer.innerHTML = content;
 }
-
-window.onload =  createContent();
+window.onload = () => {
+  createContent();
+};  
