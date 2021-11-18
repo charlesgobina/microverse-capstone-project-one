@@ -29,6 +29,7 @@ a {
   top: 0;
   font-family: 'Lato', sans-serif;
   width: 100%;
+  min-height: 100vh;
   background: url('/assets/images/header.jpg');
   background-position: center;
   background-size: cover;
@@ -38,6 +39,7 @@ a {
 header {
   position: relative;
   z-index: 1000;
+  min-height: 100vh;
 }
 
 header nav {
@@ -92,7 +94,7 @@ header .text {
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .show-case header nav {
