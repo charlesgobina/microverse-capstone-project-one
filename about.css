@@ -47,7 +47,6 @@ header nav {
   padding: 10px 20px 10px 20px;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.795);
 }
 
 header .text {
@@ -75,7 +74,7 @@ header .text {
 
   .frank-logo {
     color: #275f63;
-    letter-spacing: 10px;
+    letter-spacing: 2px;
   }
 
   .desktop-links {
@@ -99,7 +98,7 @@ header .text {
 
   .show-case header nav {
     align-items: center;
-    padding: 20px 10%;
+    padding: 5px 10%;
   }
 }
 
@@ -171,6 +170,14 @@ header nav a {
 }
 
 @media screen and (min-width: 768px) {
+  .show-case header nav {
+    flex-direction: row;
+    padding: 10px 20px 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.795);
+  }
+
   .show-case header .social .social-links {
     list-style: none;
     flex-direction: row;
@@ -184,6 +191,7 @@ header nav a {
   .show-case header .social .social-links li a {
     margin-right: 20px;
     color: #fff;
+    font-size: small;
   }
 
   .show-case header .social {
