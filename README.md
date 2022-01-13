@@ -9,7 +9,7 @@ It is a sum total of all all Microverse module one activities and is based on a 
 * JS
 
 ## Live Demo
-* [Demo](#)
+* [Demo](https://charlesgobina.github.io/microverse-capstone-project-one/index.html)
 
 ## Authors
 Charles Gobina :student: 
